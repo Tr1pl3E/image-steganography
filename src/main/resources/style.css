@@ -1,0 +1,107 @@
+/* Root layout */
+.root {
+    -fx-font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+    -fx-font-size: 14px;
+    -fx-background-color: #f9f9f9;
+}
+
+/* AlgoVbox */
+
+#algoVBox {
+    -fx-padding: 0 0 20 0;
+}
+
+/* Top header */
+#headerLabel {
+    -fx-font-size: 18px;
+    -fx-padding: 10;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+}
+
+/* LEFT SIDEBAR */
+#leftSidebar {
+    -fx-padding: 5;
+    -fx-spacing: 10;
+}
+
+/* Buttons */
+.button {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-background-radius: 6px;
+    -fx-padding: 6 6 6 6;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #45a049;
+}
+
+.button:pressed {
+    -fx-background-color: #3e8e41;
+}
+
+/* Status label */
+#statusLabel {
+    -fx-font-weight: bold;
+    -fx-text-fill: #e74c3c;
+    -fx-padding: 0 0 0 0;
+}
+
+#statusLabel.encoded {
+    -fx-text-fill: #4CAF50;
+}
+
+
+
+/* CENTER AREA */
+#centerBox {
+    -fx-padding: 0 20 0 0;
+}
+
+/* Image drop area */
+#imageDropPane {
+    -fx-background-color: #f0f0f0;
+    -fx-border-color: gray;
+    -fx-border-width: 2;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+}
+
+#dropLabel {
+    -fx-text-fill: gray;
+    -fx-font-style: italic;
+}
+
+/* TextArea */
+.text-area {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-padding: 8px;
+    -fx-focus-color: #4CAF50;
+}
+
+/* ComboBox styling */
+.combo-box {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-padding: 4 8;
+    -fx-font-size: 14px;
+}
+
+/* TextField styling */
+.text-field {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-padding: 4 8;
+    -fx-font-size: 14px;
+}
+

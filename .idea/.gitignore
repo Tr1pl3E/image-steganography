@@ -1,0 +1,24 @@
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+
+# Build output
+out/
+target/
+bin/
+
+# Maven
+*.log
+*.class
+*.jar
+*.war
+*.ear
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Other
+*.tmp
+*.swp

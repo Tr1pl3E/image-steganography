@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Gui">
+
+    <!-- Top header -->
+    <top>
+        <Label fx:id="headerLabel" text="Steganography and Encryption Demo" BorderPane.alignment="CENTER"/>
+    </top>
+
+    <!-- Left sidebar with buttons -->
+    <left>
+        <VBox prefWidth="109.0" spacing="10" BorderPane.alignment="CENTER" fx:id="leftSidebar">
+            <Button fx:id="encode" text="Encode"/>
+            <Button fx:id="decode" text="Decode"/>
+            <Button fx:id="download" text="Download"/>
+            <Label fx:id="statusLabel" text="Not encoded"/>
+        </VBox>
+    </left>
+
+    <!-- Center area -->
+    <center>
+        <VBox spacing="10" fx:id="centerBox" BorderPane.alignment="CENTER">
+
+            <!-- Image drop box -->
+            <StackPane fx:id="imageDropPane" prefHeight="400" prefWidth="600" VBox.vgrow="ALWAYS">
+                <Label fx:id="dropLabel" text="Drag and drop images here"/>
+            </StackPane>
+
+            <!-- Text area -->
+            <TextArea fx:id="textArea" prefHeight="150" promptText="Enter message here..." VBox.vgrow="NEVER"/>
+
+            <!-- Unified Algorithm selection & key input -->
+            <HBox alignment="CENTER_LEFT" prefHeight="31.0" prefWidth="600.0" spacing="10" fx:id="algoBox">
+                <VBox spacing="5" fx:id="algoVBox">
+                    <Label text="Encryption / Decryption Algorithm" />
+                    <ComboBox fx:id="algorithmSelector">
+                        <items>
+                            <FXCollections fx:factory="observableArrayList">
+                                <String fx:value="None" />
+                                <String fx:value="AES" />
+                                <String fx:value="DES" />
+                                <String fx:value="XOR" />
+                            </FXCollections>
+                        </items>
+                    </ComboBox>
+                    <TextField fx:id="keyField" promptText="Key"/>
+                </VBox>
+            </HBox>
+
+        </VBox>
+    </center>
+</BorderPane>
